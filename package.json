@@ -1,0 +1,28 @@
+{
+  "name": "dnd-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/johi-olivera/Dnd-Test.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/johi-olivera/Dnd-Test/issues"
+  },
+  "homepage": "https://github.com/johi-olivera/Dnd-Test#readme",
+  "devDependencies": {
+    "electron": "^36.3.1"
+  },
+  "dependencies": {
+    "lucide": "^0.511.0"
+  }
+}
