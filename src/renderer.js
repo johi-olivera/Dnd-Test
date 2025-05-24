@@ -75,7 +75,28 @@ function showIntro() {
         </ol>
       </div>
 
-      <button id="start-btn">Comenzar test</button>
+      <div class="ex-classes">
+
+        <div class="examples">
+          <h3>GUERRERO</h3>
+          <p>¿Sos un valiente guerrero?</p>
+        </div>
+
+        <div class="examples">
+          <h3>MAGO</h3>
+          <p>¿Un ingenioso mago?</p>
+        </div>
+        
+        <div class="examples">
+          <h3>PÍCARO</h3>
+          <p>¿O un ágil ladrón?</p>
+        </div>
+      
+      </div>
+
+      <button id="start-btn">
+        <b>Comenzar test</b>
+      </button>
     </div>
   `;
 
@@ -99,7 +120,7 @@ function showQuestion() {
           ${opt.text}
         </label>
       `).join('')}
-      <button type="submit">${isLastQuestion ? "Ver resultado" : "Siguiente"}</button>
+      <button type="submit" class="next-btn">${isLastQuestion ? "Ver resultado" : "Siguiente"}</button>
     </form>
     <p>Pregunta ${currentQuestionIndex + 1} de ${questions.length}</p>
   `;

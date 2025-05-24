@@ -3,7 +3,7 @@
 
 body {
   font-family: 'Georgia', serif;
-  background-color: #f8f0db;
+  background-color: #faf4e7;
   margin: 0;
   padding: 0;
   color: #2c1e1e;
@@ -12,7 +12,7 @@ body {
 header {
   background-color: #4e2a45;
   color: #d3ac0e;
-  padding: 1rem 2rem;
+  padding: 25px;
   box-shadow: 0 2px 5px rgba(0,0,0,0.2);
   display: flex;
   align-items: center;
@@ -31,12 +31,12 @@ main {
 }
 
 #quiz-container {
-  background-color: #fff9f0;
+  background-color: #fffdfb;
   padding: 2rem;
   border-radius: 12px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
   width: 100%;
-  max-width: 800px;
+  max-width: 850px;
   border: 2px solid #d4c8ac;
 }
 
@@ -90,15 +90,16 @@ h2 {
 }
 
 .intro button {
-  background-color: #4a1e3e;
-  color: #f3e5ab;
+  font-family: 'Nunito', sans-serif;
+  background-color: #4e2a45;
+  color:#d3ac0e;
   border: none;
-  padding: 0.8rem 1.5rem;
+  padding: 10px 15px;
   font-size: 1rem;
   border-radius: 8px;
   cursor: pointer;
   transition: background-color 0.2s;
-  margin: 10px;
+  margin: 20px;
 }
 
 .intro button:hover {
@@ -106,12 +107,13 @@ h2 {
 }
 
 .how {
-  text-align:justify;
-  background: #f8f0db;
+  text-align: justify;
+  background: #faf4e7;
   color:#745b31;
   padding: 10px;
   border-radius: 10px;
   border: 1px solid #5e5233;
+  width: 100%;
 }
 
 .how h3{
@@ -155,4 +157,38 @@ h2 {
 
 .icon-circle svg{
   color: #d3ac0e;
+}
+
+.ex-classes {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.examples {
+  width: 220px; /* Un poquito más anchas */
+  text-align: center;
+  background: #f9f4e5; /* Un color más suave */
+  color: #745b31;
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid #5e5233;
+  margin: 20px 0;
+  font-family: 'Georgia', serif; /* Fuente más elegante */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  transition: transform 0.2s ease;
+}
+
+.examples:hover {
+  transform: scale(1.05); /* Efecto hover */
+}
+
+.examples h3 {
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #5a3e2b; /* Un marrón más oscuro */
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
