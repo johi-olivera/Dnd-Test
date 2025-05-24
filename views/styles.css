@@ -1,6 +1,8 @@
+/* === Importar fuentes === */
 @import url('https://fonts.googleapis.com/css2?family=Uncial+Antiqua&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap');
 
+/* === Estilo general === */
 body {
   font-family: 'Georgia', serif;
   background-color: #faf4e7;
@@ -9,6 +11,7 @@ body {
   color: #2c1e1e;
 }
 
+/* === Encabezado === */
 header {
   background-color: #4e2a45;
   color: #d3ac0e;
@@ -24,6 +27,7 @@ h1 {
   margin: 0;
 }
 
+/* === Contenedor principal === */
 main {
   display: flex;
   justify-content: center;
@@ -32,14 +36,76 @@ main {
 
 #quiz-container {
   background-color: #fffdfb;
-  padding: 2rem;
+  padding: 20px;
   border-radius: 12px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
   width: 100%;
-  max-width: 850px;
-  border: 2px solid #d4c8ac;
+  max-width: 800px;
+  border: 2px solid #e2d8c1;
+  margin: 0 auto;
+  box-sizing: border-box;
 }
 
+/* === Introducción === */
+.intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.intro h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  font-family: 'Uncial Antiqua', serif;
+}
+
+.intro p {
+  font-size: 18px;
+  color: #745b31;
+  font-family: 'Nunito', sans-serif;
+}
+
+.intro button {
+  font-family: 'Nunito', sans-serif;
+  background-color: #4e2a45;
+  color: #d3ac0e;
+  border: none;
+  padding: 10px 15px;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  margin: 20px;
+}
+
+.intro button:hover {
+  background-color: #3a1532;
+}
+
+/* === Sección "Cómo funciona" === */
+.how {
+  text-align: justify;
+  background: #faf4e7;
+  color: #745b31;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #ddd4c0;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.how h3 {
+  padding-left: 25px;
+}
+
+.how li {
+  padding: 5px;
+  padding-right: 30px;
+  font-family: 'Nunito', sans-serif;
+}
+
+/* === Preguntas y opciones === */
 h2 {
   font-size: 1.4rem;
   margin-bottom: 1.5rem;
@@ -70,62 +136,7 @@ h2 {
   margin-right: 1rem;
 }
 
-.intro {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-}
-
-.intro h2 {
-  font-size: 2rem;
-  margin-bottom: 10px;
-  font-family: 'Uncial Antiqua', serif;
-}
-
-.intro p {
-  font-size: 18px;
-  color:#745b31;
-  font-family: 'Nunito', sans-serif;
-}
-
-.intro button {
-  font-family: 'Nunito', sans-serif;
-  background-color: #4e2a45;
-  color:#d3ac0e;
-  border: none;
-  padding: 10px 15px;
-  font-size: 1rem;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: background-color 0.2s;
-  margin: 20px;
-}
-
-.intro button:hover {
-  background-color: #3a1532;
-}
-
-.how {
-  text-align: justify;
-  background: #faf4e7;
-  color:#745b31;
-  padding: 10px;
-  border-radius: 10px;
-  border: 1px solid #5e5233;
-  width: 100%;
-}
-
-.how h3{
-  padding-left: 25px;
-}
-
-.how li{
-  padding: 5px;
-  padding-right: 30px;
-  font-family: 'Nunito', sans-serif;
-}
-
+/* === Botón de siguiente === */
 .next-btn {
   background-color: #4a1e3e;
   color: #f3e5ab;
@@ -145,50 +156,73 @@ h2 {
   transform: scale(1.02);
 }
 
+/* === Ícono redondo === */
 .icon-circle {
   width: 80px;
   height: 80px;
   border-radius: 50%;
-  background-color: #502743; /* Morado oscuro */
+  background-color: #502743;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.icon-circle svg{
+.icon-circle svg {
   color: #d3ac0e;
 }
 
+/* === Clases disponibles (Fighter, Wizard, Rogue...) === */
 .ex-classes {
   display: flex;
-  justify-content: center;
-  gap: 20px;
   flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  width: 100%;
+  box-sizing: border-box;
+  margin-top: 20px;
 }
 
 .examples {
-  width: 220px; /* Un poquito más anchas */
+  flex: 1 1 260px;
+  max-width: calc(33.333% - 13.33px);
   text-align: center;
-  background: #f9f4e5; /* Un color más suave */
+  background: #f9f4e5;
   color: #745b31;
-  padding: 20px;
+  padding: 10px 20px;
   border-radius: 10px;
-  border: 1px solid #5e5233;
-  margin: 20px 0;
-  font-family: 'Georgia', serif; /* Fuente más elegante */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  border: 1px solid #ddd4c0;
+  font-family: 'Georgia', serif;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   transition: transform 0.2s ease;
+  box-sizing: border-box;
 }
 
 .examples:hover {
-  transform: scale(1.05); /* Efecto hover */
+  transform: scale(1.05);
 }
 
 .examples h3 {
   font-weight: bold;
   font-size: 1.2rem;
-  color: #5a3e2b; /* Un marrón más oscuro */
+  color: #4e2a45;
   margin-bottom: 10px;
   text-transform: uppercase;
   letter-spacing: 1px;
+}
+
+.examples p {
+  font-size: 16px;
+}
+
+/* === Responsive para pantallas pequeñas === */
+@media (max-width: 768px) {
+  .ex-classes {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .examples {
+    width: 100%;
+    max-width: 100%;
+  }
 }
